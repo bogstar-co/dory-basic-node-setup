@@ -6,11 +6,12 @@ const hostname = "localhost";
 const port = 3000;
 
 const server = http.createServer((req, res) => {
-  console.log(`${req.method} ${req.url}`);
+  //console.log(`${req.method} ${req.url}`);
 
   // Default route: if "/", serve index.html
   let filePath = req.url === "/" ? "/index.html" : req.url;
-  filePath = path.join(__dirname, "public", filePath);
+  filePath = "public" + filePath;
+  console.log(filePath);
 
   // Determine content type
   const ext = path.extname(filePath).toLowerCase();

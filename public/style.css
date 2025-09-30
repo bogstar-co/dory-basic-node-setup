@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Roboto;
+  src: url('fonts/Roboto/static/Roboto-Regular.ttf');
+}
+
+body,
+h1 {
+  background-color: black;
+  margin: 0;
+  color: #ffffff;
+  font-family: Roboto;
+}
+
+.nav-bar {
+  background-color: #161616;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+}
+
+.half-nav {
+  display: flex;
+  gap: 20px;
+  background-color: #161616;
+  padding: 10px;
+}
+
+.button {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  border: 1px dotted #161616;
+  letter-spacing: 1px;
+  font-size: 20px;
+  transition: color 250ms, text-shadow 250ms, border 250ms;
+}
+
+.contact-button:hover {
+  color: #e0a4ff;
+  text-shadow: 0 0 20px #e0a4ff;
+  border: 1px dashed #e0a4ff;
+}
+
+.projects-button:hover {
+  color: #b1ff9e;
+  text-shadow: 0 0 20px #b1ff9e;
+  border: 1px dashed #b1ff9e;
+}
+
+.school-button:hover {
+  color: #f5e198;
+  text-shadow: 0 0 20px #f5e198;
+  border: 1px dashed #f5e198;
+}
+
+.about-me-button:hover {
+  color: #ff999e;
+  text-shadow: 0 0 20px #ff999e;
+  border: 1px dashed #ff999e;
+}
+
+.goals-button:hover {
+  color: #97edff;
+  text-shadow: 0 0 20px #97edff;
+  border: 1px dashed #97edff;
+}
+
+.my-button:link,
+.my-button:visited,
+.my-button:active {
+  background-color: white;
+  box-shadow: 0 0 6px 0 white;
+  text-decoration: none;
+  color: #070607;
+}
+
+.home-icon:link,
+.home-icon:visited,
+.home-icon:active {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+  text-shadow: 0 0 10px white;
+  padding: 3px;
+}
+
+p {
+  margin: 0;
+  align-content: center;
+}
